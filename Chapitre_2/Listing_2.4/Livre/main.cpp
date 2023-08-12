@@ -2,7 +2,7 @@
 
 int Addition(int a, int b)
 {
-	int Res:
+	int Res;
 	Res = a + b;
 	return Res;
 }
