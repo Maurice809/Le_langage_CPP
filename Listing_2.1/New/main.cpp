@@ -8,7 +8,7 @@ void AfiicheTauxTVA()
 	cout << "TVA : " << TauxTVA;
 }
 
-int main(void)
+int main()
 {
 	AfiicheTauxTVA();
 	return 0;
