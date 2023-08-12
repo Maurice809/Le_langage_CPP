@@ -2,19 +2,20 @@
 
 using namespace std;
 
-float CalculTTC(float HT)
+int Addition(int a, int b)
 {
-	float TTC = HT * 1.206;
-	return TTC;
+	int Res;
+	Res = a + b;
+	return Res;
 }
 
 int main()
 {
-	float TotalFacture;
+	int Resultat;
 
-	TotalFacture = CalculTTC(1234);
+	Resultat = Addition(4,5);
 
-	cout << endl << "Total facture : " << TotalFacture << endl;
+	cout << endl << "Resultat : " << Resultat << endl;
 
 	return 0;
 }
