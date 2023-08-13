@@ -9,7 +9,7 @@ int main()
 	i = 3.25;
 	cout << endl << "Valeur de i : " << i << endl;
 
-	i = 8.25;
+	i = 8.45/2;
 	cout << "Valeur de i : " << i << endl;
 
 	i = 3.3*4;

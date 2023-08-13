@@ -7,7 +7,7 @@ int main(void)
 	i = 3.25;
 	cout << "Valeur de i : " << i << '\n';
 
-	i = 8.25;
+	i = 8.45/2;
 	cout << "Valeur de i : " << i << '\n';
 
 	i = 3.3*4;
