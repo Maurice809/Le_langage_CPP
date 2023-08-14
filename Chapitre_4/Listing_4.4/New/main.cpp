@@ -15,7 +15,7 @@ bool Confirmer()
 		{
 			case	'o'	:
 			case	'O'	: return true;
-			case	27	:
+			case	'2' :
 			case	'n'	:
 			case	'N'	: return false;
 		}
