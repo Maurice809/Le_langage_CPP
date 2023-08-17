@@ -1,1 +1,1 @@
-Utilisation des instructions if-else imbriquees
+Iniatialisation d'un tableau d'entier
