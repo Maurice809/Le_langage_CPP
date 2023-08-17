@@ -1,17 +1,21 @@
 #include <iostream.h>
-
-#define MAXENTIER 5
-
+#include <string.h>
 
 int main()
 {
-	int TabEntier[MAXENTIER];
-	int i = -1;
+	char Collection[40+1];
+	char Titre[40+1];
 
-	for (i=0; i<MAXENTIER; i++)
-	{
-		TabEntier[i] = i+1 ;
-	}
+	strcpy(Collection,"Le Tout en Poche");
+	strcpy(Titre, "Langage C++");
+
+	cout << "Collection : " << Collection << '\n';
+	cout << "Titre      : " << Titre << "\n";
+
+	strcat(Collection,"->");
+	strcat(Collection,Titre);
+
+	cout << "Reference ouvrage : " << Collection << "\n";
 
 	return 0;
 }
