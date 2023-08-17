@@ -1,1 +1,1 @@
-Iniatialisation d'un tableau d'entier
+Iniatialiser une chaine caratere par caratere
