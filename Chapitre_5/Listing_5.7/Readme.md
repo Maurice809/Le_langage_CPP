@@ -1,0 +1,1 @@
+Tronquer une chaine
