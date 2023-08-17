@@ -1,0 +1,1 @@
+Comparer des chaines
