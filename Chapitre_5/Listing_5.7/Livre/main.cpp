@@ -1,8 +1,6 @@
 #include <iostream.h>
 #include <string.h>
 
-using namespace std;
-
 int main()
 {
 	char Titre[40+1];
