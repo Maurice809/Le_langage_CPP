@@ -1,18 +1,13 @@
 #include <iostream.h>
 
-void CalculTTC(float *Montant)
+void AfficheTitre(char *chaine)
 {
-	float HT = *Montant;
-	*Montant = HT * 1.206;
+	cout << "Titre : " << chaine << "\n";
 }
 
 int main()
 {
-	float TotalFacture = 1000;
-
-	CalculTTC(&TotalFacture);
-
-	cout << "Total facture : " << TotalFacture << "\n";
+	AfficheTitre("Le langage C++");
 
 	return 0;
 }

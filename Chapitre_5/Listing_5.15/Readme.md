@@ -1,1 +1,1 @@
-Principe de l'arithmetique des pointeurs
+Fonction qui recupere une chaine de carateres
