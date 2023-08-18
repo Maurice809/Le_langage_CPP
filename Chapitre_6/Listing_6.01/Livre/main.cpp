@@ -1,7 +1,5 @@
-#include <iostream>
-#include <cstring>
-
-using namespace std;
+#include <iostream.h>
+#include <string.h>
 
 class Micro
 {
@@ -25,15 +23,6 @@ void Micro::Affiche()
 	cout << " Disque : " << Disque << endl;
 }
 
-void Micro::Affiche2()
-{
-	cout << endl;
-	cout << " Ref        : " << Reference << endl;
-	cout << " Marque     : " << Marque << endl;
-	cout << " Processeur : " << Processeur << endl;
-	cout << " Disque     : " << Disque << endl;
-}
-
 int main()
 {
 	Micro Mic;
@@ -44,7 +33,6 @@ int main()
 	Mic.Disque = 400;
 
 	Mic.Affiche();
-	Mic.Affiche2();
 
 	return 0;
 }
