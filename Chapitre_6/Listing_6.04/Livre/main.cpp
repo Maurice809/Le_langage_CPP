@@ -1,14 +1,16 @@
 #include <iostream.h>
 
-void PassageParValeur(int *var)
+using namespace std;
+
+void PassageParValeur(int var)
 {
-	*var = 10;
+	var = 10;
 }
 int main()
 {
 	int i = 0;
 
-	PassageParValeur(&i);
+	PassageParValeur(i);
 
 	cout << "Valeur de i : " << i;
 
