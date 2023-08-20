@@ -1,5 +1,6 @@
 #include <iostream.h>
 #include <string.h>
+#include <conio.h>
 
 struct Telephone
 {
@@ -24,6 +25,7 @@ int main()
 	strcpy(Tel.Numero, "11.11.11.11.11");
 
 	Affiche(Tel);
+	getch();
 
 	return 0;
 }

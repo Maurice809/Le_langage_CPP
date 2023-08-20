@@ -1,25 +1,19 @@
 #include <iostream>
-#include <stdlib.h>
+#include <conio.h>
 
-void AfficheTTC(float HT)
+void AfficheTTC(float HT, float TauxTVA = 0.206)
 {
-	float TTC = HT + 1.206;
+	float TTC = HT * (1 + TauxTVA);
 
-	cout << "TTC : " << TTC << "\n";
-}
-
-void AfficheTTC(char *Nombre)
-{
-	float HT = atof(Nombre);
-	float TTC = HT + 1.206;
-
-	cout << "TTC : " << TTC << "\n";
+	cout << endl;
+	cout << "TTC : " << TTC << endl;
 }
 
 int main()
 {
 	AfficheTTC(1000.20);
-	AfficheTTC("1000.20");
+	AfficheTTC(1000.20, 0.055);
+	getch();
 
 	return 0;
 }

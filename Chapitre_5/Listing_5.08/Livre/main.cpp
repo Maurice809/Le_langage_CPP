@@ -1,5 +1,6 @@
 #include <iostream.h>
 #include <string.h>
+#include <conio.h>
 
 int main()
 {
@@ -14,9 +15,10 @@ int main()
 
 	//comparaison de la chaine
 	if (strcmp(Titre, Choix) == 0)
-		cout << "Disponible" << "\n";
+		cout << "Disponible" << endl;
 	else
-		cout << "Titre inconnu" << "\n";
+		cout << "Titre inconnu" << endl;
+	getch();
 
 	return 0;
 }

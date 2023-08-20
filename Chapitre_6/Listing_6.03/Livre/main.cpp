@@ -1,4 +1,5 @@
 #include <iostream.h>
+#include <conio.h>
 
 void PassageParValeur(int *var)
 {
@@ -11,6 +12,7 @@ int main()
 	PassageParValeur(&i);
 
 	cout << "Valeur de i : " << i;
+	getch();
 
 	return 0;
 }

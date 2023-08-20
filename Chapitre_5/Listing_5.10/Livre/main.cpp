@@ -1,5 +1,6 @@
 #include <iostream.h>
 #include <string.h>
+#include <conio.h>
 
 struct Telephone
 {
@@ -16,9 +17,10 @@ int main()
 	strcpy(Tel.Prenom, "PAUL");
 	strcpy(Tel.Numero, "11.11.11.11.11");
 
-	cout << "Nom    : " << Tel.Nom << "\n";
-	cout << "Prenom : " << Tel.Prenom << "\n";
-	cout << "Numero : " << Tel.Numero << "\n";
+	cout << "Nom    : " << Tel.Nom << endl;
+	cout << "Prenom : " << Tel.Prenom << endl;
+	cout << "Numero : " << Tel.Numero << endl;
+	getch();
 
 	return 0;
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 
 int main()
 {
@@ -10,6 +11,7 @@ int main()
 	Titre[3] = '\0';
 
 	cout << "Langage " << Titre;
+	getch();
 
 	return 0;
 }

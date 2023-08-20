@@ -1,18 +1,42 @@
-#include <iostream.h>
+#include <iostream>
+#include <conio.h>
 
 int main()
 {
 	// tableu a deux dimension
 	int Echiquier[8][8];
+	// Varible de compteur
+	int y = -1;
+	int x = -1;
 
-	Echiquier[0][0] = 2; // A1 : Tour palcee premiere colonne
+	// remplissage du tableau
+	while(++y < 8)
+	{
+		while(++x < 8)
+		{
+			// determination d'un case paire
+			if ((y+x) % 2 == 0)
+				Echiquier[y][x] = 0;
+			else
+				Echiquier[y][x] = 1;
+		}
+		x = -1;
+	}
+	y = -1;
 
-	Echiquier[0][1] = 3; // B1 : Cavalier placee deuxieme colonne
-
-	// initialisation deuxieme ligne
-	Echiquier[1][0] = 1; // A2 : Pion place premiere colonne
-
-	Echiquier[1][1] = 1; // B2 : Pion place premiere colonne
+	// Affichage du tableau
+	cout << endl;
+	cout << "Affiche le tableau : " << endl << endl;
+	while(++y < 8)
+	{
+		while (++x < 8)
+		{
+			cout << Echiquier[y][x] << " ";
+		}
+		cout << endl;
+		x = -1;
+	}
+	getch();
 
 	return 0;
 }

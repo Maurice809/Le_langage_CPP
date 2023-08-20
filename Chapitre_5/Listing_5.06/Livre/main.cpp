@@ -1,18 +1,19 @@
 #include <iostream.h>
-#include <cstring.h>
+#include <string.h>
+#include <conio.h>
 
 int main()
 {
 	char Titre[40+1];
 
-	strcpy(Titre, "Langage C++");
+	strcpy(Titre, "Le Tout en Poche Langage C++");
 
 	cout << "Titre      : " << Titre << endl;
 
 	Titre[0] = '\0'; // strcpy(Titre,"");
 
-	cout << "Collection : " << Collection << endl;
 	cout << "Titre      : " << Titre << endl;
+	getch();
 
 	return 0;
 }

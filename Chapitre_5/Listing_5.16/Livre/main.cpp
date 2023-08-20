@@ -1,5 +1,6 @@
 #include <iostream.h>
 #include <cstring.h>
+#include <conio.h>
 
 struct Telephone
 {
@@ -10,9 +11,9 @@ struct Telephone
 
 void Affiche(Telephone *pTel)
 {
-	cout << "Nom    : " << pTel->Nom << "\n";
-	cout << "Prenom : " << pTel->Prenom << "\n";
-	cout << "Numero : " << pTel->Numero << "\n";
+	cout << "Nom    : " << pTel->Nom << endl;
+	cout << "Prenom : " << pTel->Prenom << endl;
+	cout << "Numero : " << pTel->Numero << endl;
 }
 
 int main()
@@ -24,6 +25,7 @@ int main()
 	strcpy(Tel.Numero, "11.11.11.11.11");
 
 	Affiche(&Tel);
+	getch();
 
 	return 0;
 }

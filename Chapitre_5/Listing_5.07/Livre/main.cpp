@@ -1,5 +1,6 @@
 #include <iostream.h>
 #include <string.h>
+#include <conio.h>
 
 int main()
 {
@@ -12,8 +13,9 @@ int main()
 	Titre[16] = '\0';
 
 	cout << "Titre      : " << Titre << "\n";
-	int i;
-	cin >> i;
+//	int i;
+//	cin >> i;
+	getch();
 
 	return 0;
 }

@@ -1,5 +1,6 @@
 #include <iostream.h>
 #include <string.h>
+#include <conio.h>
 
 class Micro
 {
@@ -10,13 +11,11 @@ class Micro
 		int Disque;
 
 		void Affiche();
-		void Affiche2();
 };
 
 
 void Micro::Affiche()
 {
-	cout << endl;
 	cout << " Ref : " << Reference;
 	cout << " Marque : " << Marque;
 	cout << " Processeur : " << Processeur;
@@ -33,6 +32,7 @@ int main()
 	Mic.Disque = 400;
 
 	Mic.Affiche();
+	getch();
 
 	return 0;
 }

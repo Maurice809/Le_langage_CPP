@@ -1,5 +1,6 @@
 #include <iostream.h>
 #include <string.h>
+#include <conio.h>
 
 int main()
 {
@@ -16,6 +17,7 @@ int main()
 	strcat(Collection,Titre);
 
 	cout << "Reference ouvrage : " << Collection << "\n";
+	getch();
 
 	return 0;
 }

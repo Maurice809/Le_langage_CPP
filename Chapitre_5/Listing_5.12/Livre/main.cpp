@@ -1,4 +1,5 @@
 #include <iostream.h>
+#include <conio.h>
 
 int main()
 {
@@ -16,6 +17,7 @@ int main()
 	// Affichage
 	cout << "a  : " << a << "\n";
 	cout << "*p : " << *p << "\n";
+	getch();
 
 	return 0;
 }
