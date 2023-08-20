@@ -21,6 +21,7 @@
 
 # ingnore vi temp
 *.swp
+*.bak
 
 # ingnore eFat file
 ._*
@@ -33,6 +34,13 @@
 *.ko
 *.obj
 *.elf
+
+# Borland C++
+*.csm
+*.ilc
+*.ild
+*.ils
+*.tds
 
 # Linker output
 *.ilk
