@@ -14,8 +14,8 @@ int main()
 
 	Resultat = Addition(4,5);
 
-	cout << 'Resultat : ' << Resultat << '\n';
-   getch();
+	cout << "Resultat : " << Resultat << endl;
+	getch();
 
 	return 0;
 }
