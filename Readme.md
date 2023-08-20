@@ -9,5 +9,14 @@ Information seul les programmes qui se trouvent dans les repertoires "New" ont e
 g++ -Wall -Wextra -Werror -std=c++98 main.cpp
 
 ou avec Microsoft Visual Studio :
-
 cl -std=c++98 main.cpp
+
+Les listings qui se touvent dans les repertoitres
+"Livre" ont ete compiler avec Borland C++ 5.02 avec la commande suivante :
+
+c:\BC5\BIN\bcc32.exe main.cpp
+
+Quelques modification sur les listings du livre a ete pour ameliorer l'utilisation de l' IDE fournit avec Borland C++.
+Entre autre l'ajout de la biblioteque <conio.h> et sa commande getch().
+
+Bien que Borland C++ vient de l'antiquite de l'informatique, l'installation fonctionne encore sur Windows 11 et son utilistaion est impossible pour une projet 16 bit.
