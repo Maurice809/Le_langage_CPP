@@ -1,4 +1,5 @@
 #include <iostream.h>
+#include <conio.h>
 
 void AfiicheTauxTVA()
 {
@@ -9,5 +10,6 @@ void AfiicheTauxTVA()
 int main(void)
 {
 	AfiicheTauxTVA();
+   getch();
 	return 0;
 }

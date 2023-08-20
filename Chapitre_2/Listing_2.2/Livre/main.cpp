@@ -1,4 +1,5 @@
 #include <iostream.h>
+#include <conio.h>
 
 void AfficheTTC(float HT)
 {
@@ -13,6 +14,7 @@ int main(void)
 	AfficheTTC(TotalFactureHT);
 
 	AfficheTTC(1234);
+   getch();
 
 	return 0;
 }

@@ -1,4 +1,5 @@
 #include <iostream.h>
+#include <conio.h>
 
 int Addition(int a, int b)
 {
@@ -14,6 +15,7 @@ int main()
 	Resultat = Addition(4,5);
 
 	cout << 'Resultat : ' << Resultat << '\n';
+   getch();
 
 	return 0;
 }
