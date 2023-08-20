@@ -1,4 +1,5 @@
 #include <iostream.h>
+#include <conio.h>
 
 float TauxTVA = 20.6;
 
@@ -11,10 +12,11 @@ float CalculTTC(float HT)
 int main()
 {
 	float TotalFacture;
-	cout << "Taux de TVA : " << TauxTVA << '\n';
+	cout << "Taux de TVA : " << TauxTVA << endl;
 
 	TotalFacture = CalculTTC(100);
-	cout << "Total facture : " << TotalFacture << '\n';
+	cout << "Total facture : " << TotalFacture << endl;
+	getch();
 
 	return 0;
 }

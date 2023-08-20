@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 
 void Etoile(int NbrEtoiles)
 {
@@ -12,17 +13,17 @@ void Etoile(int NbrEtoiles)
 
 int main()
 {
-	cout << "Etoiles " << '\n';
+	cout << "Etoiles " << endl;
 	Etoile(0);
-	cout << '\n';
+	cout << endl;
 	Etoile(1);
-	cout << '\n';
+	cout << endl;
 	Etoile(2);
-	cout << '\n';
+	cout << endl;
 	Etoile(3);
-	cout << '\n';
+	cout << endl;
 	Etoile(4);
-	cout << '\n';
+	cout << endl;
 
 	return 0;
 }

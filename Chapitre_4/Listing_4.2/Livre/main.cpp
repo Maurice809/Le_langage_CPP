@@ -1,4 +1,5 @@
 #include <iostream.h>
+#include <conio.h>
 
 float MontantCredit(int CodeClient)
 {
@@ -22,6 +23,7 @@ int main(void)
 	cout << "Credit : " << MontantCredit(1) << endl;
 	cout << "Credit : " << MontantCredit(2) << endl;
 	cout << "Credit : " << MontantCredit(3) << endl;
+	getch();
 
 	return 0;
 }

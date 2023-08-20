@@ -1,21 +1,17 @@
-#include <iostream.h>
+#include <iostream>
+#include <conio.h>
 
-int Compteur()
+extern float TauxTVA;
+
+// Prototype de la fonction
+float CalculTTC(float HT);
+
+int main()
 {
-	static int i = 0;
-	i++;
-	return i;
-}
+	float TotalFacture;
+	cout << "Taux de TVA : " << TauxTVA << endl;
 
-int main(void)
-{
-	int Res;
-
-	Res = Compteur();
-	cout << endl << "Res : " << Res << endl;
-
-	Res = Compteur();
-	cout << "Res : " << Res << endl;
-
+	TotalFacture = CalculTTC(100);
+	cout << "Total facture : " << TotalFacture << endl;
 	return 0;
 }

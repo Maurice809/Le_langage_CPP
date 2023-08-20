@@ -1,4 +1,5 @@
 #include <iostream.h>
+#include <conio.h>
 
 int main(void)
 {
@@ -28,6 +29,7 @@ int main(void)
 	}
 	else
 		cout << "Materiel non disponible";
+	getch();
 
 	return 0;
 }

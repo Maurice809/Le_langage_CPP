@@ -1,4 +1,5 @@
 #include <iostream.h>
+#include <conio.h>
 
 int Compteur()
 {
@@ -12,10 +13,11 @@ int main(void)
 	int Res;
 
 	Res = Compteur();
-	cout << endl << "Res : " << Res << endl;
+	cout << "Res : " << Res << endl;
 
 	Res = Compteur();
 	cout << "Res : " << Res << endl;
+	getch();
 
 	return 0;
 }

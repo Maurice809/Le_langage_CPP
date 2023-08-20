@@ -4,9 +4,10 @@ bool Confirmer()
 {
 	char c;
 
-	while (1)
+	while (42)
 	{
 		cout << "Confirmer (o/n) :";
+		cin >> c;
 
 		switch(c)
 		{

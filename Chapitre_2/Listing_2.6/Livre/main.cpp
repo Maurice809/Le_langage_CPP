@@ -1,4 +1,5 @@
 #include <iostream.h>
+#include <conio.h>
 
 float CalculTTC(float HT);
 
@@ -6,7 +7,8 @@ int main()
 {
 	float TotalFacture;
 	TotalFacture = CalculTTC(1234);
-	cout << "Total facture : " << TotalFacture << '\n';
+	cout << "Total facture : " << TotalFacture << endl;
+	getch();
 
 	return 0;
 }
