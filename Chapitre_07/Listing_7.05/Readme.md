@@ -1,1 +1,1 @@
-onstructeurs et listes d'initialistaion
+definition du destructeur
