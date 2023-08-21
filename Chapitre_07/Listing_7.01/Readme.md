@@ -1,1 +1,1 @@
-Utilisation d'un objet cree en statique
+Definition et utilisation d'un constructeur
