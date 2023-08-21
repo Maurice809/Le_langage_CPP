@@ -12,6 +12,8 @@ class Micro
 		int Disque;
 	public:
 		Micro(const char *r="", const char *m="", const char *p="", int d=0);
+		int GetDisque();
+		void SetDisque(int d);
 };
 
 Micro::Micro(const char *r, const char *m, const char *p, int d)
@@ -22,12 +24,24 @@ Micro::Micro(const char *r, const char *m, const char *p, int d)
 	Disque = d;
 }
 
+int Micro::GetDisque()
+{
+	return Disque;
+}
+
+void Micro::SetDisque(int d)
+{
+	Disque = d;
+}
+
 int main()
 {
 	Micro Mic("X16", "PH", "DX4-100", 200);
 
-	// strcpy(Mic.References, "X17");
-	// compilation impossible
+	cout << endl;
+	cout << "Disque : " << Mic.GetDisque() << endl;
+	Mic.SetDisque(300);
+	cout << "Disque : " << Mic.GetDisque() << endl;
 
 	return 0;
 }
