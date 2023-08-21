@@ -1,1 +1,1 @@
-Utilisation d'un objet cree en statique
+onstructeurs et listes d'initialistaion

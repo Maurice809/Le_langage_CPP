@@ -1,1 +1,1 @@
-Utilisation d'un objet cree en statique
+Surcharge de constructeur

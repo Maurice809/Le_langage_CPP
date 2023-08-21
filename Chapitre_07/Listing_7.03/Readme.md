@@ -1,1 +1,1 @@
-Utilisation d'un objet cree en statique
+Constructeur et valeurs par default
