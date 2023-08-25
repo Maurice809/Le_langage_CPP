@@ -1,0 +1,1 @@
+Definition de fonction virtuel

@@ -43,6 +43,9 @@
 *.ils
 *.tds
 
+#Java
+*.class
+
 # Linker output
 *.ilk
 *.map
