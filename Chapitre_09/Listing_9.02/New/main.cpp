@@ -10,7 +10,7 @@ class Materiel
         char Marques[20+1];
     public:
         Materiel(const char *r, const char *m);
-        virtual void Affiche();
+        void Affiche();
 };
 
 class Micro : public Materiel
@@ -20,7 +20,7 @@ class Micro : public Materiel
         int Disque;
     public:
         Micro(const char *r, const char *m, const char *p, int d);
-        virtual void Affiche();
+        void Affiche();
 };
 
 Materiel::Materiel(const char *r, const char *m)

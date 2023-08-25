@@ -1,7 +1,6 @@
-#include <iostream>
-#include <cstring>
-
-using namespace std;
+#include <iostream.h>
+#include <string.h>
+#include <conio.h>
 
 class Materiel
 {
@@ -64,6 +63,7 @@ int main()
     pMat = new Micro("X16", "PH", "DX4-100", 200);
     pMat->Affiche();
     delete pMat;
+    getch();
 
     return 0;
 }
