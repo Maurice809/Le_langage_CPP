@@ -1,0 +1,1 @@
+Generalistion des fonction virtuelles

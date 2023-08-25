@@ -1,7 +1,5 @@
-#include <iostream>
-#include <cstring>
-
-using namespace std;
+#include <iostream.h>
+#include <string.h>
 
 class Materiel
 {
