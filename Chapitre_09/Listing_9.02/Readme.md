@@ -1,1 +1,1 @@
-Utilisation d'un pointeur vers la classe de base
+Definition de fonction virtuel
