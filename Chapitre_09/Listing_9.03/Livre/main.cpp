@@ -1,6 +1,5 @@
 #include <iostream.h>
 #include <string.h>
-#include <conio.h>
 
 class Materiel
 {
@@ -19,6 +18,15 @@ class Micro : public Materiel
         int Disque;
     public:
         Micro(const char *r, const char *m, const char *p, int d);
+        virtual void Affiche();
+};
+
+class Imprimante : public Materiel
+{
+    protected:
+        char Type[20+1];
+    public:
+        Imprimante(const char *r, const char *m, const char *t);
         virtual void Affiche();
 };
 
@@ -46,24 +54,52 @@ void Micro::Affiche()
 {
     cout << " Ref : " << Reference;
     cout << " Marque : " << Marques;
-    cout << " Processeur :" << Processeur;
+    cout << " Processeur : 0" << Processeur;
     cout << " Disque : " << Disque;
+    cout << endl;
+}
+
+Imprimante::Imprimante(const char *r,const char *m, const char *t)
+           :Materiel(r,m)
+{
+    strcpy(Type, t);
+}
+
+void Imprimante::Affiche()
+{
+    cout << " Ref : " << Reference;
+    cout << " Marque : " << Marques;
+    cout << " Type : " << Type;
     cout << endl;
 }
 
 int main()
 {
-    Materiel *pMat;
+    Materiel *pMat = NULL;
+    int TypeObjet = 0;
 
-    cout << endl;
-    pMat = new Materiel("X01", "XX");
-    pMat->Affiche();
-    delete pMat;
+    while (42)
+    {
+        cout << endl << "Choisissez un type de materiel" << endl;
+        cout << "(1 - Micro, 2 - Imprimante, 0 - pour quitter) :";
+        cin >> TypeObjet;
 
-    pMat = new Micro("X16", "PH", "DX4-100", 200);
-    pMat->Affiche();
-    delete pMat;
-    getch();
-
+        switch (TypeObjet)
+        {
+        case 1 : pMat = new Micro("X18", "PH", "DX4-100", 200);
+            break;
+        case 2 : pMat = new Imprimante("x18", "PH", "Laser");
+            break;
+        case 0 : if (pMat != NULL) delete pMat;
+            return 0;
+        default: cout << endl << "Choix invalide\a" << endl;
+            continue;
+        }
+        cout << endl;
+        pMat->Affiche();
+        delete pMat;
+        pMat = NULL;
+    }
+    
     return 0;
 }
