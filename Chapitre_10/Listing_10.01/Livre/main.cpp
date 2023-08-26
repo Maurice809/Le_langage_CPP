@@ -1,68 +1,57 @@
-#include <iostream.h>
-#include <string.h>
+#include <iostream>
 #include <conio.h>
 
-class Materiel
+class TVA
 {
+    private:
+        float Taux;
     protected:
-        char Reference[20+1];
-        char Marques[20+1];
+        void SetTaux(float taux) { Taux=taux; }
+        float GetTaux() { return Taux; }
     public:
-        Materiel(const char *r, const char *m);
-        void Affiche();
+        TVA();
+    
+    friend void AfficheTaux();
+    friend class Facture;
 };
 
-class Micro : public Materiel
+class Facture
 {
     protected:
-        char Processeur[20+1];
-        int Disque;
+        float Montant;
     public:
-        Micro(const char *r, const char *m, const char *p, int d);
-        void Affiche();
+        Facture(float montant);
+        void AfficheTTCLivre();
 };
 
-Materiel::Materiel(const char *r, const char *m)
+TVA::TVA()
 {
-    strcpy(Reference, r);
-    strcpy(Marques, m);
+    Taux = 0.206;
 }
 
-void Materiel::Affiche()
+Facture::Facture(float montant)
 {
-    cout << " Ref : " << Reference;
-    cout << " Marque : " << Marques;
-    cout << endl;
+    Montant = montant;
 }
 
-Micro::Micro(const char *r, const char *m, const char *p, int d) 
-      :Materiel(r,m)
+void Facture::AfficheTTCLivre()
 {
-    strcpy(Processeur, p);
-    Disque = d;
+    TVA tva;
+    tva.SetTaux(0.055);
+    cout << "TTC : " << (Montant*(1+tva.GetTaux())) << endl;
 }
 
-void Micro::Affiche()
+void AfficheTaux()
 {
-    cout << " Ref : " << Reference;
-    cout << " Marque : " << Marques;
-    cout << " Processeur :" << Processeur;
-    cout << " Disque : " << Disque;
-    cout << endl;
+    TVA tva;
+    cout << "Taux : " << tva.GetTaux() << endl;
 }
-
 int main()
 {
-    Materiel *pMat;
+    AfficheTaux();
 
-    cout << endl;
-    pMat = new Materiel("X01", "XX");
-    pMat->Affiche();
-    delete pMat;
-
-    pMat = new Micro("X16", "PH", "DX4-100", 200);
-    pMat->Affiche();
-    delete pMat;
+    Facture fac(1200);
+    fac.AfficheTTCLivre();
     getch();
 
     return 0;

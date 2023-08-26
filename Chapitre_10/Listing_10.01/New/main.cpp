@@ -27,10 +27,10 @@ class Facture
 
 TVA::TVA()
 {
-    Taux + 0.206;
+    Taux = 0.206;
 }
 
-Facture::Facture(float montant);
+Facture::Facture(float montant)
 {
     Montant = montant;
 }
