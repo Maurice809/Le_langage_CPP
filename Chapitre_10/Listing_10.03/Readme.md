@@ -1,0 +1,1 @@
+Definition et utilisation d'une fonction membre statique
