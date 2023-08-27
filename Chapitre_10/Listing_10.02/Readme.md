@@ -1,0 +1,1 @@
+Definition d'un compteur d'objet avec une donnee membre
