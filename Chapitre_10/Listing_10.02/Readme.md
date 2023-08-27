@@ -1,1 +1,1 @@
-Definition d'un compteur d'objet avec une donnee membre
+Dfinition d'un compteur d'objet avec une membre static
