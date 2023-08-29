@@ -1,0 +1,1 @@
+utilisation et utilisation d'un tableau de pointeur
