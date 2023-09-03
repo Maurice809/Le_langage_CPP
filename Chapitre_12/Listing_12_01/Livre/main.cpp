@@ -1,8 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include <iomanip> // setx, setfill, setprecission
-
-using namespace std;
+#include <conio.h>
 
 int main()
 {
@@ -52,6 +51,7 @@ int main()
     cout.setf(ios::left, ios::adjustfield);
     cout << Chaine << endl; 
     cout << endl;
+    getch();
 
     return 0;
 }
