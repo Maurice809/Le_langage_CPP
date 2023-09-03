@@ -1,0 +1,1 @@
+Affichage ecran avec cout
