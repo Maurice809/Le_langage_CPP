@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <conio.h>
 
 class Voiture
 {
@@ -40,6 +41,7 @@ void Voiture::Afficher()
 
 void Voiture::Saisir()
 {
+    cout << endl;
     cout << " Marque : ";
     cin.getline(Marque, sizeof(Marque));
     cout << " Modele : ";
@@ -57,9 +59,10 @@ int main()
     cout.width(80);
     cout.fill('-');
     cout.setf(ios::left, ios::adjustfield);
-    cout << endl << " Affichage " << endl;
+    cout << " Affichage ";
     cout.fill(' ');
     UneVoiture.Afficher();
+    getch();
 
     return 0;
 }
