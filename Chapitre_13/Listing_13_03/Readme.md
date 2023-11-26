@@ -1,1 +1,1 @@
-Utilisation d'une fonction template avec une classe utilisateur
+Classe template de gestion de tableau dynamiques (type primaires + chaines)
