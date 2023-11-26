@@ -1,0 +1,1 @@
+Utilisation d'une fonction template avec une classe utilisateur
